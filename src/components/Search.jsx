@@ -4,7 +4,7 @@ const Search = ({searchTerm,setSearchTerm}) => {
   return (
     <div className='search'>
         <div>
-            <img src='/Search-Input.png' alt='search' />
+            <img src='./Search-Input.png' alt='search' />
             <input
             type='text'
             placeholder='Search Through thousand of movies'

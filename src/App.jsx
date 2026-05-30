@@ -1,12 +1,10 @@
-import React, { use } from 'react'
 import Search from './components/Search'
 import Spiner from './components/Spiner'
 import MovieCard from './components/MovieCard';
 import { updateSearchCount,getTrendingMovies } from './appwrite.js';
 
-import { useState,useEffect } from 'react'
+import React, { useState,useEffect } from 'react'
 import { useDebounce } from 'react-use'
-
 
 const API_BASE_URL="https://api.themoviedb.org/3";
 const API_KEY=import.meta.env.VITE_TMDB_API_KEY;
@@ -83,7 +81,7 @@ const App = () => {
 
       <div className='wrapper'>
         <header>
-          <img src='/hero-img.png' alt='hero-banner' />
+          <img src='./hero-img.png' alt='hero-banner' />
           <h1>Find <span className='text-gradient'>Movies</span> You'll Enjoy Without Hassel</h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
